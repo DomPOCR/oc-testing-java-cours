@@ -8,7 +8,7 @@ public class Calculator {
 	public int add(int a, int b) {
 		return a + b;
 	}
-	
+
 	public int sub(int a, int b) {
 		return a - b;
 	}
@@ -16,15 +16,15 @@ public class Calculator {
 	public int multiply(int a, int b) {
 		return a * b;
 	}
-	
+
 	public int divide(int a, int b) {
 		return a / b;
 	}
-	
+
 	public double add(double a, double b) {
 		return a + b;
 	}
-	
+
 	public double sub(double a, double b) {
 		return a - b;
 	}
@@ -32,14 +32,14 @@ public class Calculator {
 	public double multiply(double a, double b) {
 		return a * b;
 	}
-	
+
 	public double divide(double a, double b) {
 		return a / b;
 	}
-	
+
 	public int fact(int a) {
 		// MAUVAISE IMPLEMENTATION de la fonction factorielle
-		return a*fact(a-1);
+		return a * fact(a - 1);
 	}
 
 	public void longCalculation() {
@@ -56,7 +56,8 @@ public class Calculator {
 
 		for (int i = 0; i < numberString.length(); i++) {
 			if (numberString.charAt(i) != '-') {
-				integers.add(Integer.parseInt(numberString, i, i + 1, 10));
+				String numberTab = numberString.charAt(i) + "";
+				integers.add(Integer.parseInt(numberTab));
 			}
 		}
 		return integers;
